@@ -12,6 +12,8 @@ while true; do
     echo "Capturing screen at $timestamp."
     # For one screen:
     screencapture -t jpg -x "./imgs/source/screen1-$timestamp.jpg";
+    sips -Z 1920 "./imgs/source/screen1-$timestamp.jpg"
+
     # For two screens:
     # screencapture -x "screen1-$timestamp.png" "screen2-$timestamp.png";
 

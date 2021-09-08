@@ -4,7 +4,7 @@
 #
 
 COUNTER=0;
-for i in `find ./imgs/source/. -name '*.jpg'` ;
+for i in `find ./imgs/source/. -name '*.jpg' | sort -n` ;
 do
   # Write the filename to be friendly with ffmpeg's old filename input
   FILENAME=`printf '%05d.jpg' $COUNTER`
